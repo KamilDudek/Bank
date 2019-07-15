@@ -30,6 +30,9 @@ namespace Bank
             decimal value = billingAccount.GetBalance();
             Console.WriteLine("Balans konta: {0}", value);
 
+            decimal savingValue = savingAccount.GetBalance();
+            Console.WriteLine("Balans konta: " + savingValue);
+
             Printer printer = new Printer();
             printer.Print(savingAccount);
             printer.Print(secondsavingAccount);
